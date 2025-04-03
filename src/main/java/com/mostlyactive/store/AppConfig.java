@@ -24,8 +24,7 @@ public class AppConfig {
     public OrderService orderService(){
         if(paymentChoice.equals("stripe")) {
             return new OrderService(stripe());
-        } else {
-            return new OrderService(payPal());
         }
+        return new OrderService(payPal());
     }
 }
