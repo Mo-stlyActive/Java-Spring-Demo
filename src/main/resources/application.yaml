@@ -1,6 +1,19 @@
 spring:
   application:
     name: store
+  datasource:
+    url: jdbc:mysql://localhost:3306/store?createDatabaseIfNotExist=true
+    username: root
+    password: Coding15zone
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQLDialect
+
+
 
 stripe:
   apiUrl: https://api.stripe.com
